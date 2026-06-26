@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "WATCHPACK_POLLING=true next dev --webpack",
+    "dev:turbo": "next dev",
+    "fetch-assets": "node scripts/fetch-event-assets.mjs",
+    "prebuild": "node scripts/fetch-event-assets.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -11,7 +14,8 @@
   "dependencies": {
     "next": "16.2.9",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-easy-crop": "^6.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ETHGlobal Banner Generator
 
-## Getting Started
+Create personalized attendance banners for ETHGlobal events and share them on X.
 
-First, run the development server:
+Inspired by the [Blockspäti Banner Generator](https://blockspati.joinwebzero.com/).
+
+## Events
+
+- **ETHGlobal Lisbon 2026** — July 24–26, 2026
+- **ETHGlobal Tokyo 2026** — September 25–27, 2026
+- **ETHOnline 2026** — September 4–16, 2026
+- **ETHGlobal Mumbai 2026** — November 6–8, 2026
+
+## Features
+
+- Event dropdown with dates, location, and sponsors on the banner
+- Upload your photo
+- Live canvas preview
+- Download PNG banner
+- Share on X (downloads image + opens tweet compose)
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/armsves/ethglobalx)
 
-## Learn More
+Or from the CLI:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm i -g vercel
+vercel
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vercel auto-detects Next.js. No extra configuration required.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- HTML Canvas API for banner rendering
