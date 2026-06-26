@@ -60,7 +60,7 @@
     ],
     "totalPrizes": 101000,
     "prizePool": "$101,000+",
-    "fetchedAt": "2026-06-26T08:46:19.834Z"
+    "fetchedAt": "2026-06-26T08:50:51.009Z"
   },
   "tokyo": {
     "id": "tokyo",
@@ -98,7 +98,7 @@
     ],
     "totalPrizes": 40000,
     "prizePool": "$50,000+",
-    "fetchedAt": "2026-06-26T08:46:25.556Z"
+    "fetchedAt": "2026-06-26T08:51:01.319Z"
   },
   "ethonline": {
     "id": "ethonline",
@@ -137,8 +137,8 @@
       }
     ],
     "totalPrizes": 60000,
-    "prizePool": "$60,000+",
-    "fetchedAt": "2026-06-26T08:46:29.356Z"
+    "prizePool": "$75,000+",
+    "fetchedAt": "2026-06-26T08:51:06.084Z"
   },
   "mumbai": {
     "id": "mumbai",
@@ -177,7 +177,7 @@
       }
     ],
     "totalPrizes": 80000,
-    "prizePool": "$80,000+",
-    "fetchedAt": "2026-06-26T08:46:38.929Z"
+    "prizePool": "$100,000+",
+    "fetchedAt": "2026-06-26T08:51:17.138Z"
   }
 }

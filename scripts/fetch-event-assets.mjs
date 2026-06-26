@@ -172,6 +172,42 @@ const EVENT_OVERRIDES = {
     totalPrizes: 40000,
     prizePool: "$50,000+",
   },
+  ethonline: {
+    sponsors: [
+      {
+        name: "0G",
+        prizeAmount: 15000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/g8xu4/square-logo/default.png",
+      },
+      {
+        name: "The Graph",
+        prizeAmount: 15000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/pfyco/square-logo/default.png",
+      },
+      {
+        name: "Hedera",
+        prizeAmount: 15000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/bdi3h/square-logo/default.png",
+      },
+      {
+        name: "1inch",
+        prizeAmount: 10000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/if0ri/square-logo/default.png",
+      },
+      {
+        name: "Uniswap Foundation",
+        prizeAmount: 5000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/026zc/square-logo/default.png",
+      },
+    ],
+    totalPrizes: 60000,
+    prizePool: "$75,000+",
+  },
   mumbai: {
     logo: "/events/mumbai-logo.png",
     sponsors: [
@@ -206,7 +242,7 @@ const EVENT_OVERRIDES = {
       },
     ],
     totalPrizes: 80000,
-    prizePool: "$80,000+",
+    prizePool: "$100,000+",
   },
 };
 
