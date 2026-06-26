@@ -37,7 +37,7 @@ export const EVENTS: Record<EventId, EthGlobalEvent> = {
     location: "Tokyo, Japan",
     type: "IRL Hackathon",
     url: "https://ethglobal.com/events/tokyo2026",
-    prizePool: "$100,000+",
+    prizePool: "$50,000+",
     accent: "#dc2626",
     accentSecondary: "#f97316",
   },

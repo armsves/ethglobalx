@@ -140,8 +140,38 @@ function probeCdn(url) {
   }
 }
 
-/** Manual overrides when ETHGlobal pages lack assets yet (e.g. Mumbai 2026). */
+/** Manual overrides for prize sponsors / pool when pages are incomplete or need pinning. */
 const EVENT_OVERRIDES = {
+  tokyo: {
+    sponsors: [
+      {
+        name: "World",
+        prizeAmount: 15000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/3zpxc/square-logo/default.png",
+      },
+      {
+        name: "ENS",
+        prizeAmount: 10000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/bw7y9/square-logo/default.png",
+      },
+      {
+        name: "Uniswap Foundation",
+        prizeAmount: 10000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/026zc/square-logo/default.png",
+      },
+      {
+        name: "1inch",
+        prizeAmount: 5000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/if0ri/square-logo/default.png",
+      },
+    ],
+    totalPrizes: 40000,
+    prizePool: "$50,000+",
+  },
   mumbai: {
     logo: "/events/mumbai-logo.png",
     sponsors: [
