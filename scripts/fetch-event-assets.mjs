@@ -140,6 +140,46 @@ function probeCdn(url) {
   }
 }
 
+/** Manual overrides when ETHGlobal pages lack assets yet (e.g. Mumbai 2026). */
+const EVENT_OVERRIDES = {
+  mumbai: {
+    logo: "/events/mumbai-logo.png",
+    sponsors: [
+      {
+        name: "World",
+        prizeAmount: 20000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/3zpxc/square-logo/default.png",
+      },
+      {
+        name: "1inch",
+        prizeAmount: 20000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/if0ri/square-logo/default.png",
+      },
+      {
+        name: "Uniswap Foundation",
+        prizeAmount: 15000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/026zc/square-logo/default.png",
+      },
+      {
+        name: "Arkiv",
+        prizeAmount: 15000,
+        logoUrl: "/sponsors/arkiv.png",
+      },
+      {
+        name: "ENS",
+        prizeAmount: 10000,
+        logoUrl:
+          "https://ethglobal.b-cdn.net/organizations/bw7y9/square-logo/default.png",
+      },
+    ],
+    totalPrizes: 80000,
+    prizePool: "$80,000+",
+  },
+};
+
 function scrapeHomepagePartners() {
   const homepageHtml = fetchUrl("https://ethglobal.com/");
   const sponsors = [];
@@ -193,7 +233,7 @@ function scrapeEvent(id, slug) {
     probeCdn(`https://ethglobal.b-cdn.net/events/${slug}/logo/default.png`) ??
     null;
 
-  return {
+  const result = {
     id,
     slug,
     prizesUrl: `https://ethglobal.com/events/${slug}/prizes`,
@@ -207,6 +247,13 @@ function scrapeEvent(id, slug) {
     prizePool: formatPrizePool(totalPrizes),
     fetchedAt: new Date().toISOString(),
   };
+
+  const override = EVENT_OVERRIDES[id];
+  if (override) {
+    return { ...result, ...override, fetchedAt: result.fetchedAt };
+  }
+
+  return result;
 }
 
 function main() {

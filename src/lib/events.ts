@@ -63,9 +63,9 @@ export const EVENTS: Record<EventId, EthGlobalEvent> = {
     location: "Mumbai, India",
     type: "IRL Hackathon",
     url: "https://ethglobal.com/events/mumbai2026",
-    prizePool: "$100,000+",
-    accent: "#ea580c",
-    accentSecondary: "#f59e0b",
+    prizePool: "$80,000+",
+    accent: "#c2185b",
+    accentSecondary: "#26c6b8",
   },
 };
 

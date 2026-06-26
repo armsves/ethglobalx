@@ -7,7 +7,7 @@ export function proxyImageUrl(url: string): string {
 }
 
 export function loadImage(url: string): Promise<HTMLImageElement> {
-  const src = proxyImageUrl(url);
+  const src = url.startsWith("/") ? url : proxyImageUrl(url);
   const cached = imageCache.get(src);
   if (cached) return Promise.resolve(cached);
 

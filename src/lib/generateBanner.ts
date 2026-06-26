@@ -212,7 +212,7 @@ export async function generateBanner(
   if (assets.logo) {
     try {
       const eventLogo = await loadImage(assets.logo);
-      drawLogo(ctx, eventLogo, 40, 24, 240, 52);
+      drawLogo(ctx, eventLogo, 40, 20, 280, 56);
     } catch {
       ctx.fillStyle = "rgba(255,255,255,0.95)";
       ctx.font = "bold 22px system-ui, -apple-system, sans-serif";

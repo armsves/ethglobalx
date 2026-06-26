@@ -60,7 +60,7 @@
     ],
     "totalPrizes": 101000,
     "prizePool": "$101,000+",
-    "fetchedAt": "2026-06-26T08:17:40.336Z"
+    "fetchedAt": "2026-06-26T08:43:09.864Z"
   },
   "tokyo": {
     "id": "tokyo",
@@ -98,7 +98,7 @@
     ],
     "totalPrizes": 40000,
     "prizePool": "$40,000+",
-    "fetchedAt": "2026-06-26T08:17:44.202Z"
+    "fetchedAt": "2026-06-26T08:43:16.061Z"
   },
   "ethonline": {
     "id": "ethonline",
@@ -138,7 +138,7 @@
     ],
     "totalPrizes": 60000,
     "prizePool": "$60,000+",
-    "fetchedAt": "2026-06-26T08:17:48.831Z"
+    "fetchedAt": "2026-06-26T08:43:21.949Z"
   },
   "mumbai": {
     "id": "mumbai",
@@ -146,83 +146,38 @@
     "prizesUrl": "https://ethglobal.com/events/mumbai2026/prizes",
     "backgroundImage": null,
     "banner": null,
-    "logo": null,
+    "logo": "/events/mumbai-logo.png",
     "venue": null,
     "heroImages": [],
     "sponsors": [
       {
+        "name": "World",
+        "prizeAmount": 20000,
+        "logoUrl": "https://ethglobal.b-cdn.net/organizations/3zpxc/square-logo/default.png"
+      },
+      {
         "name": "1inch",
-        "prizeAmount": 0,
+        "prizeAmount": 20000,
         "logoUrl": "https://ethglobal.b-cdn.net/organizations/if0ri/square-logo/default.png"
       },
       {
-        "name": "Arbitrum",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/spp1v/square-logo/default.png"
+        "name": "Uniswap Foundation",
+        "prizeAmount": 15000,
+        "logoUrl": "https://ethglobal.b-cdn.net/organizations/026zc/square-logo/default.png"
       },
       {
-        "name": "Aztec",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/a8pnr/square-logo/default.png"
-      },
-      {
-        "name": "Base",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/h5ps8/square-logo/default.png"
-      },
-      {
-        "name": "Celo",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/inotq/square-logo/default.png"
-      },
-      {
-        "name": "Chainlink Labs",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/f8ku2/square-logo/default.png"
-      },
-      {
-        "name": "Circle",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/x3xey/square-logo/default.png"
+        "name": "Arkiv",
+        "prizeAmount": 15000,
+        "logoUrl": "/sponsors/arkiv.png"
       },
       {
         "name": "ENS",
-        "prizeAmount": 0,
+        "prizeAmount": 10000,
         "logoUrl": "https://ethglobal.b-cdn.net/organizations/bw7y9/square-logo/default.png"
-      },
-      {
-        "name": "EigenLayer",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/1bo7r/square-logo/default.png"
-      },
-      {
-        "name": "Hyperlane",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/gt566/square-logo/default.png"
-      },
-      {
-        "name": "LayerZero",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/dkzkp/square-logo/default.png"
-      },
-      {
-        "name": "Optimism",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/rmkrz/square-logo/default.png"
-      },
-      {
-        "name": "Polygon",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/qy8m3/square-logo/default.png"
-      },
-      {
-        "name": "Privy ",
-        "prizeAmount": 0,
-        "logoUrl": "https://ethglobal.b-cdn.net/organizations/ijybm/square-logo/default.png"
       }
     ],
-    "totalPrizes": 0,
-    "prizePool": null,
-    "fetchedAt": "2026-06-26T08:17:59.960Z"
+    "totalPrizes": 80000,
+    "prizePool": "$80,000+",
+    "fetchedAt": "2026-06-26T08:43:32.079Z"
   }
 }
